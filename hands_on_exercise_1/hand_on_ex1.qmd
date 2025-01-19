@@ -3,13 +3,11 @@ title: "Hands-on exercise 1"
 author: "dhreeti"
 ---
 
-Getting Started
+# Getting Started
 
-Install and launch R packages
+## Install and launch R packages
 
-this code chunk below uses p_load() of pacman to check if
-tidyverse package have been installed. If they are they will
-be launched
+this code chunk below uses p_load() of pacman to check if tidyverse package have been installed. If they are they will be launched
 
 ```{r}
 pacman::p_load(tidyverse)
@@ -19,7 +17,15 @@ pacman::p_load(tidyverse)
 importing the data
 
 ```{r}
-exam_data <- read.csv("data_handson/Exam_data.csv")
+exam_data <- read.csv("data/Exam_data.csv")
 
 
+```
+
+plotting a simple graph
+
+```{r}
+
+
+ggplot(data = exam_data,aes(x=RACE)) + geom_bar()
 ```

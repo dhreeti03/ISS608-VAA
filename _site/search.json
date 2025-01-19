@@ -18,6 +18,13 @@
     "href": "hands_on_exercise_1/hand_on_ex1.html",
     "title": "Hands-on exercise 1",
     "section": "",
-    "text": "Getting Started\nInstall and launch R packages\nthis code chunk below uses p_load() of pacman to check if tidyverse package have been installed. If they are they will be launched\n\npacman::p_load(tidyverse)\n\nimporting the data\n\nexam_data &lt;- read.csv(\"data_handson/Exam_data.csv\")"
+    "text": "this code chunk below uses p_load() of pacman to check if tidyverse package have been installed. If they are they will be launched\n\npacman::p_load(tidyverse)\n\nimporting the data\n\nexam_data &lt;- read.csv(\"data/Exam_data.csv\")\n\nplotting a simple graph\n\nggplot(data = exam_data,aes(x=RACE)) + geom_bar()"
+  },
+  {
+    "objectID": "hands_on_exercise_1/hand_on_ex1.html#install-and-launch-r-packages",
+    "href": "hands_on_exercise_1/hand_on_ex1.html#install-and-launch-r-packages",
+    "title": "Hands-on exercise 1",
+    "section": "",
+    "text": "this code chunk below uses p_load() of pacman to check if tidyverse package have been installed. If they are they will be launched\n\npacman::p_load(tidyverse)\n\nimporting the data\n\nexam_data &lt;- read.csv(\"data/Exam_data.csv\")\n\nplotting a simple graph\n\nggplot(data = exam_data,aes(x=RACE)) + geom_bar()"
   }
 ]
